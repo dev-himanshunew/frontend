@@ -119,14 +119,14 @@ export default function Register() {
         <button
           type="submit"
           disabled={loading}
-          className="bg-green-500 text-white p-2 w-full mb-2 disabled:opacity-50"
+          className="bg-green-500 text-white p-2 w-full mb-2 disabled:opacity-50 cursor-pointer"
         >
           {loading ? "Registering..." : "Register"}
         </button>
 
         <p className="text-sm text-center">
           Already have an account?{" "}
-          <Link href="/login" className="text-blue-500 underline">
+          <Link href="/login" className="text-blue-500 underline cursor-pointer">
             Login
           </Link>
         </p>

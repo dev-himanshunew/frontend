@@ -70,7 +70,7 @@ export default function Login() {
         <button
           onClick={handleLogin}
           disabled={loading}
-          className="bg-blue-500 text-white p-2 w-full mb-2 disabled:opacity-50"
+          className="bg-blue-500 text-white p-2 w-full mb-2 disabled:opacity-50 cursor-pointer"
         >
           {loading ? "Logging in..." : "Login"}
         </button>
@@ -78,7 +78,7 @@ export default function Login() {
         {/* ✅ Register Link */}
         <p className="text-sm text-center">
           Don’t have an account?{" "}
-          <Link href="/register" className="text-blue-500 underline">
+          <Link href="/register" className="text-blue-500 underline cursor-pointer">
             Register
           </Link>
         </p>
